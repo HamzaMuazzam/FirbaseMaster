@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FBSorageActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progress_horizontal2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:visibility="invisible" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/iv_test"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="9dp"
+        android:onClick="uploadtextfile"
+        android:text="upload text file" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="9dp"
+        android:onClick="upload_file_Using_putbyte"
+        android:text="upload file_putbyte from apk assets" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="9dp"
+        android:onClick="uploadfile_inputstream"
+        android:text="uploadfile_inputstream from apk assets" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="9dp"
+        android:onClick="local_storage_file_uploading"
+        android:text="uploadfile uri from local storage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="9dp"
+        android:onClick="dwonload_andsaveUsingByteArray"
+        android:text="Donwload file and save using getbyte method" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="9dp"
+        android:onClick="downoadFileUsing_getFile"
+        android:text="downoadFileUsing_getFile" />
+   <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="9dp"
+        android:onClick="downoad_File_Using_getDownloadUrl"
+        android:text="downoad File Using getDownloadUrl" />
+
+
+</LinearLayout>
