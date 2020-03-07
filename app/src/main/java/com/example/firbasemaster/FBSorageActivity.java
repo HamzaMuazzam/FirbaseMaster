@@ -41,13 +41,11 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class FBSorageActivity extends AppCompatActivity {
-
     public static final int PICK_CODE = 99;
     private static final int STORAGE_PERMISSION_CODE = 100;
     private boolean mGranted;
     private StorageReference mStorageRef;
     public static final String TAG = "MyTag";
-
     private ImageView iv_test;
     private ProgressBar mProgressBar;
 
@@ -108,7 +106,6 @@ public class FBSorageActivity extends AppCompatActivity {
 
 
     }
-
 
     private Bitmap readimage() {
         InputStream inputStream = null;
@@ -179,7 +176,6 @@ public class FBSorageActivity extends AppCompatActivity {
 
 
     }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -325,7 +321,7 @@ public class FBSorageActivity extends AppCompatActivity {
     }
 
     private void downloadmanager(Uri uri) {
-        File file = new File(String.valueOf(FBSorageActivity.this.getExternalFilesDir(Environment.DIRECTORY_DCIM)),"file.mp4");
+        File file = new File(String.valueOf(FBSorageActivity.this.getExternalFilesDir(Environment.DIRECTORY_DCIM)), "file.mp4");
         DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
         DownloadManager.Request request = new DownloadManager.Request(uri);
         request.setTitle("Title")
